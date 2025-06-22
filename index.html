@@ -1,586 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Techno Builders</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Techno Builders</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <a href="#"><img src="img/TTB LOGO(NEW).png" alt="The Techno Builders Logo" /></a>
-    </div>
-    <nav aria-label="Main navigation">
-      <ul class="nav-links">
-        <li class="dropdown">
-          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
-            Publications <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </button>
-          <ul class="dropdown-content" aria-label="submenu">
-            <li><a href="https://online.fliphtml5.com/uyqesn/fiof/" target="_blank" rel="noopener noreferrer">Rythmus</a></li>
-            <li><a href="https://online.fliphtml5.com/uyqesn/ivqn/" target="_blank" rel="noopener noreferrer">Techno Bulletin</a></li>
-            <li><a href="https://online.fliphtml5.com/uyqesn/qpzb/" target="_blank" rel="noopener noreferrer">Chronikale</a></li>
-          </ul>
-        </li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#blazing-update">Updates</a></li>
-        <li class="dropdown">
-          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
-            More <i class="fa fa-caret-down" aria-hidden="true"></i>
-          </button>
-          <ul class="dropdown-content" aria-label="submenu">
-            <li><a href="#announcements">Announcements</a></li>
-            <li><a href="#video-highlights">Video Highlights</a></li>
-            <li><a href="#event-coverage">Event Coverage</a></li>
-            <li><a href="#editorial">Our Team</a></li>
-            <li><a href="#about">About & Values</a></li>
-            <li><a href="#constitution">Constitution</a></li>
-          </ul>
-        </li>
-        <li>
-          <button class="dark-mode-toggle" aria-label="Toggle dark mode" id="darkModeToggle">🌙 Dark Mode</button>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <header class="navbar">
+        <div class="logo">
+            <a href="#"><img src="img/TTB LOGO(NEW).png" alt="The Techno Builders Logo" /></a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+                        Publications <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-content" aria-label="submenu">
+                        <li><a href="https://online.fliphtml5.com/uyqesn/gmbt/" target="_blank" rel="noopener noreferrer">Rythmus</a></li>
+                        <li><a href="https://online.fliphtml5.com/uyqesn/vzbe/" target="_blank" rel="noopener noreferrer">Techno Bulletin</a></li>
+                        <li><a href="https://online.fliphtml5.com/uyqesn/lknh/" target="_blank" rel="noopener noreferrer">Chronikale</a></li>
+                    </ul>
+                </li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#blazing-update">Updates</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+                        More <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-content" aria-label="submenu">
+                        <li><a href="#announcements">Announcements</a></li>
+                        <li><a href="#video-highlights">Video Highlights</a></li>
+                        <li><a href="#event-coverage">Event Coverage</a></li>
+                        <li><a href="#editorial">Our Team</a></li>
+                        <li><a href="#about">About & Values</a></li>
+                        <li><a href="#constitution">Constitution</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="dark-mode-toggle" aria-label="Toggle dark mode" id="darkModeToggle">🌙 Dark Mode</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="video-bg" aria-labelledby="intro-heading">
-      <video autoplay muted loop playsinline class="video-element" aria-hidden="true">
-        <source src="img/" type="video/jpg" />
-        Your browser does not support the video tag.
-      </video>
-      <div class="intro-text">
-        <h1 id="intro-heading" class="typewriter-text"></h1>
-      </div>
-    </section>
+    <main>
+        <section class="hero-slider-section">
+            <div class="swiper hero-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video autoplay muted loop playsinline class="hero-media">
+                            <source src="img/LOOP VID.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/IMG_0072.JPG" alt="Gawad Parangal event" class="hero-media" />
+                    </div>
+                    <div class="swiper-slide">
+                         <img src="img/IMG_0116.JPG" alt="Bagani Warriors event" class="hero-media" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/IMG_0133.JPG" alt="Bagani Warriors event" class="hero-media" />
+                   </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="intro-text">
+                <h1 id="intro-heading" class="typewriter-text"></h1>
+            </div>
+        </section>
 
-    <section id="blazing-update" class="section reveal">
-        <div class="section-header">
-            <h2>Today's Blazing Update</h2>
-            <p>The latest and most important video news, right here.</p>
-        </div>
-        <div class="video-player-wrapper">
-            <video controls poster="img/uni.j" class="main-video-player">
-                <source src="img/TTB VID.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
+        <section id="blazing-update" class="section reveal">
+            <div class="section-header">
+                <h2>Today's Blazing Update</h2>
+                <p>The latest and most important video news, right here.</p>
+            </div>
+            <div class="swiper video-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="video-player-wrapper">
+                            <video controls poster="img/blazing thumbnail.png" class="main-video-player">
+                                <source src="img/ediboy blazing update.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-player-wrapper">
+                            <video controls poster="img/blazing thumbnail.png" class="main-video-player">
+                                <source src="img/TTB VID.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-player-wrapper">
+                             <video controls poster="img/blazing thumbnail.png" class="main-video-player">
+                                <source src="img/pj blazing update.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
 
-    <section id="news" class="section reveal">
-        <div class="section-header">
-            <h2>Latest News</h2>
-            <p>Stay informed with the most recent updates and stories from around the campus.</p>
-        </div>
-        <div class="article-grid">
-            <a href="https://www.facebook.com/share/p/1Ew5VAuMbk/" target="_blank" rel="noopener noreferrer" class="article-card">
-                <figure class="article-card__image-wrapper">
-                    <img src="img/news ccd.jpg" alt="University campus building">
-                    <span class="article-card__category">Campus News</span>
-                </figure>
-                <div class="article-card__content">
-                    <h3>𝗖𝗖𝗗, 𝗔𝗧𝗠 𝗖𝗼𝗻𝗱𝘂𝗰𝘁 𝗪𝗼𝗿𝗸𝗲𝗿𝘀' 𝗥𝗶𝗴𝗵𝘁𝘀,  𝗘𝗺𝗽𝗹𝗼𝘆𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗦𝗲𝗺𝗶𝗻𝗮𝗿 𝘁𝗼 𝗚𝗿𝗮𝗱𝘂𝗮𝘁𝗶𝗻𝗴 𝗦𝘁𝘂𝗱𝗲𝗻𝘁𝘀</h3>
-                    <p>The Counseling and Career Development (CCD) and Alliance of Technicians and Managers (ATM) of the University of Southern Mindanao-Kidapawan City Campus (USM-KCC) hold a workers’ rights and employability seminar for graduating students today, June 19, 2025, at the University Covered Court."...</p>
-                </div>
-                <div class="article-card__footer">
-                    <span>𝐀𝐧𝐠𝐞𝐥 𝐋𝐢𝐧𝐞 𝐄. 𝐄𝐬𝐭𝐞𝐩𝐚 | 𝐓𝐓𝐁 𝐒𝐭𝐚𝐟𝐟 𝐖𝐫𝐢𝐭𝐞𝐫</span>
-                    <span class="read-more-arrow">&rarr;</span>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/share/p/19NgeLgL95/" target="_blank" rel="noopener noreferrer" class="article-card">
-                <figure class="article-card__image-wrapper">
-                    <img src="img/usm men football.jpg" alt="Students collaborating at a tech event">
-                    <span class="article-card__category">Events</span>
-                </figure>
-                <div class="article-card__content">
-                    <h3>𝗨𝗦𝗠 𝗠𝗲𝗻'𝘀 𝗙𝗼𝗼𝘁𝗯𝗮𝗹𝗹 𝗧𝗲𝗮𝗺 𝗪𝗶𝗻𝘀 𝗧𝗞𝗖 𝟮𝗻𝗱 𝗬𝗲𝗮𝗿 𝗙𝗼𝗼𝘁𝗯𝗮𝗹𝗹 𝗧𝗼𝘂𝗿𝗻𝗮𝗺𝗲𝗻𝘁 𝗖𝗵𝗮𝗺𝗽𝗶𝗼𝗻𝘀𝗵𝗶𝗽 𝗧𝗶𝘁𝗹𝗲</h3>
-                    <p>The University of Southern Mindanao (USM) Men's Football Team emerged triumphant after securing the championship title during the Tulunan Kickers Club (TKC) 2nd Year Football Tournament held last May 17-18, 205, at Tulunan National High School (TNHS) football field.</p>
-                </div>
-                <div class="article-card__footer">
-                    <span>𝐓𝐞𝐱𝐭: 𝐉𝐚𝐬𝐩𝐞𝐫 𝐀𝐝𝐫𝐢𝐚𝐧 𝐏𝐨𝐞𝐭𝐚| 𝐓𝐓𝐁 𝐍𝐞𝐰𝐬 𝐄𝐝𝐢𝐭𝐨𝐫 </span>
-                    <span class="read-more-arrow">&rarr;</span>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/share/p/1FYbDFggcJ/" target="_blank" rel="noopener noreferrer" class="article-card">
-                <figure class="article-card__image-wrapper">
-                    <img src="img/gawad parangal.jpg" alt="A modern library interior">
-                    <span class="article-card__category">Academics</span>
-                </figure>
-                <div class="article-card__content">
-                    <h3>𝟮𝟰𝘁𝗵 𝗚𝗮𝘄𝗮𝗱 𝗣𝗮𝗿𝗮𝗻𝗴𝗮𝗹 𝗵𝗼𝗻𝗼𝗿𝘀 𝗔𝗰𝗮𝗱𝗲𝗺𝗶𝗰 𝗦𝗰𝗵𝗼𝗹𝗮𝗿𝘀, 𝗿𝗲𝗰𝗼𝗴𝗻𝗶𝘇𝗲𝘀 𝘀𝘁𝘂𝗱𝗲𝗻𝘁 𝗹𝗲𝗮𝗱𝗲𝗿𝘀, 𝗮𝘁𝗵𝗹𝗲𝘁𝗲𝘀, 𝗿𝗲𝗽𝗿𝗲𝘀𝗲𝗻𝘁𝗮𝘁𝗶𝘃𝗲𝘀
-                    </h3>
-                    <p>Celebrating students’ excellence, perseverance, and dedication, the University of Southern Mindanao Kidapawan City Campus (USM-KCC) conducted its 24th Recognition and Gawad Parangal, earlier today, April 29, 2025, at the covered court.</p>
-                </div>
-                <div class="article-card__footer">
-                    <span>𝐉𝐨𝐬𝐞𝐩𝐡𝐢𝐧𝐞 𝐌. 𝐃𝐞 𝐆𝐮𝐳𝐦𝐚𝐧| 𝐓𝐓𝐁 𝐅𝐞𝐚𝐭𝐮𝐫𝐞 𝐄𝐝𝐢𝐭𝐨𝐫</span>
-                    <span class="read-more-arrow">&rarr;</span>
-                </div>
-            </a>
-        </div>
-    </section>
+        <section id="news" class="section reveal">
+            <div class="section-header">
+                <h2>Latest News</h2>
+                <p>Stay informed with the most recent updates and stories from around the campus.</p>
+            </div>
+            <div class="article-grid">
+                <a href="https://www.facebook.com/share/p/1Ew5VAuMbk/" target="_blank" rel="noopener noreferrer" class="card article-card">
+                    <figure class="article-card__image-wrapper">
+                        <img loading="lazy" src="img/news ccd.jpg" alt="University campus building">
+                        <span class="article-card__category">Campus News</span>
+                    </figure>
+                    <div class="article-card__content">
+                        <h3>CCD, ATM Conduct Workers' Rights, Employability Seminar to Graduating Students</h3>
+                        <p>The Counseling and Career Development (CCD) and Alliance of Technicians and Managers (ATM) of the University of Southern Mindanao-Kidapawan City Campus (USM-KCC) hold a workers’ rights and employability seminar for graduating students today, June 19, 2025, at the University Covered Court."...</p>
+                    </div>
+                    <div class="article-card__footer">
+                        <span>Angel Line E. Estepa | TTB Staff Writer</span>
+                        <span class="read-more-arrow">→</span>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/share/p/19NgeLgL95/" target="_blank" rel="noopener noreferrer" class="card article-card">
+                    <figure class="article-card__image-wrapper">
+                        <img loading="lazy" src="img/usm men football.jpg" alt="Students collaborating at a tech event">
+                        <span class="article-card__category">Events</span>
+                    </figure>
+                    <div class="article-card__content">
+                        <h3>USM Men's Football Team Wins TKC 2nd Year Football Tournament Championship Title</h3>
+                        <p>The University of Southern Mindanao (USM) Men's Football Team emerged triumphant after securing the championship title during the Tulunan Kickers Club (TKC) 2nd Year Football Tournament held last May 17-18, 205, at Tulunan National High School (TNHS) football field.</p>
+                    </div>
+                    <div class="article-card__footer">
+                        <span>Jasper Adrian Poeta| TTB News Editor</span>
+                        <span class="read-more-arrow">→</span>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/share/p/1FYbDFggcJ/" target="_blank" rel="noopener noreferrer" class="card article-card">
+                    <figure class="article-card__image-wrapper">
+                        <img loading="lazy" src="img/gawad parangal.jpg" alt="A modern library interior">
+                        <span class="article-card__category">Academics</span>
+                    </figure>
+                    <div class="article-card__content">
+                        <h3>24th Gawad Parangal honors Academic Scholars, recognizes student leaders, athletes, representatives</h3>
+                        <p>Celebrating students’ excellence, perseverance, and dedication, the University of Southern Mindanao Kidapawan City Campus (USM-KCC) conducted its 24th Recognition and Gawad Parangal, earlier today, April 29, 2025, at the covered court.</p>
+                    </div>
+                    <div class="article-card__footer">
+                        <span>Josephine M. De Guzman| TTB Feature Editor</span>
+                        <span class="read-more-arrow">→</span>
+                    </div>
+                </a>
+            </div>
+        </section>
 
-    <section id="features" class="section reveal">
-        <div class="section-header">
-            <h2>In-Depth Features</h2>
-            <p>Latest news and achievements from the University of Southern Mindanao - Kidapawan City Campus and its student body.</p>
-        </div>
-        <div class="article-grid">
-            <a href="https://www.facebook.com/share/p/1BoD64x4Q8/" target="_blank" rel="noopener noreferrer" class="article-card">
-                <figure class="article-card__image-wrapper">
-                    <img src="img/img2/staff hunt.jpg" alt="Abstract representation of AI">
-                    <span class="article-card__category">Staff Hunt</span>
-                </figure>
-                <div class="article-card__content">
-                    <h3>𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗦𝘁𝗮𝗳𝗳 𝗛𝘂𝗻𝘁 𝗥𝗲𝘀𝘂𝗹𝘁𝘀!</h3>
-                    <p>The Techno-Builders (TTB), the official student publication of the University of Southern Mindanao-Kidapawan City Campus (USM-KCC), extends heartfelt congratulations to the new TTB staffers who have successfully passed the screening process. ...</p>
-                </div>
-                <div class="article-card__footer">
-                    <span>By Josephine De Guzman</span>
-                    <span class="read-more-arrow">&rarr;</span>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/share/p/15SvajDp5g/" target="_blank" rel="noopener noreferrer" class="article-card">
-                <figure class="article-card__image-wrapper">
-                    <img src="img/img2/prc.jpg" alt="Students studying together">
-                    <span class="article-card__category">PRC PASSERS</span>
-                </figure>
-                <div class="article-card__content">
-                    <h3>𝗨𝗦𝗠-𝗞𝗖𝗖 𝗿𝗲𝗰𝗼𝗿𝗱𝘀 𝟴𝟭.𝟭𝟬% 𝗽𝗮𝘀𝘀𝗶𝗻𝗴 𝗿𝗮𝘁𝗲 𝗶𝗻 𝗠𝗮𝗿𝗰𝗵 𝟮𝟬𝟮𝟱 𝗟𝗘𝗣𝗧</h3>
-                    <p>The University of Southern Mindanao-Kidapawan City Campus (USM-KCC) garnered 81.10% passing rate during the March 2025 Licensure Examination for Professional Teachers (LEPT), surpassing the National passing rate of 62.31%. .</p>
-                </div>
-                <div class="article-card__footer">
-                    <span>By Frisk Jasper Quirino</span>
-                    <span class="read-more-arrow">&rarr;</span>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/share/p/16mAp7ngUw/" target="_blank" rel="noopener noreferrer" class="article-card">
-                <figure class="article-card__image-wrapper">
-                    <img src="img/img2/staffers.jpg" alt="A collection of modern gadgets">
-                    <span class="article-card__category">Academics</span>
-                </figure>
-                <div class="article-card__content">
-                    <h3>The Techno-Builders extends its congratulations to its staffers who excelled academically in the past two semesters. </h3>
-                    <p>Your academic triumph brings pride to the publication as it reflects your dedication and perseverance in achieving academic excellence. Continue to uphold #ResponsibleJournalism while excelling in the field of academics. </p>
-                </div>
-                <div class="article-card__footer">
-                    <span>By Ediboy Garcia</span>
-                    <span class="read-more-arrow">&rarr;</span>
-                </div>
-            </a>
-        </div>
-    </section>
+        <section id="features" class="section reveal">
+            <div class="section-header">
+                <h2>In-Depth Features</h2>
+                <p>Latest news and achievements from the University of Southern Mindanao - Kidapawan City Campus and its student body.</p>
+            </div>
+            <div class="article-grid">
+                <a href="https://www.facebook.com/share/p/1BoD64x4Q8/" target="_blank" rel="noopener noreferrer" class="card article-card">
+                    <figure class="article-card__image-wrapper">
+                        <img loading="lazy" src="img/img2/staff hunt.jpg" alt="Abstract representation of AI">
+                        <span class="article-card__category">Staff Hunt</span>
+                    </figure>
+                    <div class="article-card__content">
+                        <h3>Special Staff Hunt Results!</h3>
+                        <p>The Techno-Builders (TTB), the official student publication of the University of Southern Mindanao-Kidapawan City Campus (USM-KCC), extends heartfelt congratulations to the new TTB staffers who have successfully passed the screening process. ...</p>
+                    </div>
+                    <div class="article-card__footer">
+                        <span>By Josephine De Guzman</span>
+                        <span class="read-more-arrow">→</span>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/share/p/15SvajDp5g/" target="_blank" rel="noopener noreferrer" class="card article-card">
+                    <figure class="article-card__image-wrapper">
+                        <img loading="lazy" src="img/img2/prc.jpg" alt="Students studying together">
+                        <span class="article-card__category">PRC PASSERS</span>
+                    </figure>
+                    <div class="article-card__content">
+                        <h3>USM-KCC records 81.10% passing rate in March 2025 LEPT</h3>
+                        <p>The University of Southern Mindanao-Kidapawan City Campus (USM-KCC) garnered 81.10% passing rate during the March 2025 Licensure Examination for Professional Teachers (LEPT), surpassing the National passing rate of 62.31%. .</p>
+                    </div>
+                    <div class="article-card__footer">
+                        <span>By Frisk Jasper Quirino</span>
+                        <span class="read-more-arrow">→</span>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/share/p/16mAp7ngUw/" target="_blank" rel="noopener noreferrer" class="card article-card">
+                    <figure class="article-card__image-wrapper">
+                        <img loading="lazy" src="img/img2/staffers.jpg" alt="A collection of modern gadgets">
+                        <span class="article-card__category">Academics</span>
+                    </figure>
+                    <div class="article-card__content">
+                        <h3>The Techno-Builders extends its congratulations to its staffers who excelled academically in the past two semesters.</h3>
+                        <p>Your academic triumph brings pride to the publication as it reflects your dedication and perseverance in achieving academic excellence. Continue to uphold #ResponsibleJournalism while excelling in the field of academics. </p>
+                    </div>
+                    <div class="article-card__footer">
+                        <span>By Ediboy Garcia</span>
+                        <span class="read-more-arrow">→</span>
+                    </div>
+                </a>
+            </div>
+        </section>
 
-    <section id="video-highlights" class="section reveal">
-        <h2>Video Highlights</h2>
-        <div class="card-grid">
-            <a href="https://www.facebook.com/share/v/1AfRoW8YNF/" class="video-card" aria-label="Watch video: Campus Tech Fair 2025">
-                <img src="img/malle.jpg" alt="The Master of Arts in Language and Literacy Education (MALLE) graduate program of the University of Southern Mindanao-Kidapawan City Campus (USM-KCC) conducted its first Research Colloquium where 27 students presented their paper to research experts at the USM-KCC Learning Resource Center today, April 05, 2025.">
-                <div class="video-card-overlay"><i class="fas fa-play"></i></div>
-                <h3>𝗠𝗔𝗟𝗟𝗘 𝗚𝗿𝗮𝗱𝘂𝗮𝘁𝗲 𝗣𝗿𝗼𝗴𝗿𝗮𝗺 𝗛𝗼𝗹𝗱𝘀 𝟭𝘀𝘁 𝗥𝗲𝘀𝗲𝗮𝗿𝗰𝗵 𝗖𝗼𝗹𝗹𝗼𝗾𝘂𝗶𝘂𝗺</h3>
-            </a>
-            <a href="https://www.facebook.com/share/v/196BcTvpmd/" class="video-card" aria-label="Watch video: Interview with a Robotics Expert">
-                <img src="img/493727806_1245418797591950_3024588827659196747_n.jpg" alt="Thumbnail for Robotics Expert interview">
-                <div class="video-card-overlay"><i class="fas fa-play"></i></div>
-                <h3>Snappy.Disciplined.Synchronized.</h3>
-            </a>
-            <a href="https://www.facebook.com/share/v/1Bo62LXcjU/" class="video-card" aria-label="Watch video: Coding Challenge Highlights">
-                <img src="img/chronikale.png" alt="Thumbnail for Coding Challenge video">
-                <div class="video-card-overlay"><i class="fas fa-play"></i></div>
-                <h3>𝗧𝗛𝗘 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟 𝗦𝗧𝗨𝗗𝗘𝗡𝗧 𝗠𝗔𝗚𝗔𝗭𝗜𝗡𝗘 𝗢𝗙 𝗧𝗛𝗘 𝗨𝗦𝗠-𝗞𝗖𝗖</h3>
-            </a>
-        </div>
-    </section>
+        <section id="video-highlights" class="section reveal">
+            <h2>Video Highlights & Spotlights</h2>
+            <div class="card-grid">
+                <a href="https://www.facebook.com/share/v/1AfRoW8YNF/" class="card video-card" aria-label="Watch video: Campus Tech Fair 2025">
+                    <img loading="lazy" src="img/malle.jpg" alt="The Master of Arts in Language and Literacy Education (MALLE) graduate program of the University of Southern Mindanao-Kidapawan City Campus (USM-KCC) conducted its first Research Colloquium where 27 students presented their paper to research experts at the USM-KCC Learning Resource Center today, April 05, 2025.">
+                    <div class="video-card-overlay"><i class="fas fa-play"></i></div>
+                    <h3>MALLE Graduate Program Holds 1st Research Colloquium</h3>
+                </a>
+                <a href="https://www.facebook.com/share/v/19FL5SxqoZ/" class="card video-card" aria-label="Watch video: Interview with a Robotics Expert">
+                    <img loading="lazy" src="img/STUDENT SPOT.png" alt="Thumbnail for Robotics Expert interview">
+                    <div class="video-card-overlay"><i class="fas fa-play"></i></div>
+                    <h3>𝗦𝘁𝘂𝗱𝗲𝗻𝘁 𝗦𝗽𝗼𝘁𝗹𝗶𝗴𝗵𝘁</h3>
+                </a>
+                <a href="https://www.facebook.com/share/v/1Bo62LXcjU/" class="card video-card" aria-label="Watch video: Coding Challenge Highlights">
+                    <img loading="lazy" src="img/chronikale.png" alt="Thumbnail for Coding Challenge video">
+                    <div class="video-card-overlay"><i class="fas fa-play"></i></div>
+                    <h3>THE OFFICIAL STUDENT MAGAZINE OF THE USM-KCC</h3>
+                </a>
+            </div>
+        </section>
 
-    <section id="event-coverage" class="section reveal">
-        <h2>Event Coverage</h2>
-        <div class="card-grid">
-            <div class="event-card">
-                <img src="img/kaliline.jpg" alt="Photo from the Annual Innovation Summit">
-                <div class="event-card-content">
-                    <h3>𝗥𝗲𝘀𝗼𝘂𝗻𝗱𝗶𝗻𝗴 𝗥𝗵𝘆𝘁𝗵𝗺𝘀: 𝗞𝗮𝗹𝗶𝗹𝗶𝗻𝗲 𝗙𝗲𝘀𝘁𝗶𝘃𝗮𝗹'𝘀 𝗛𝗶𝗽𝗵𝗼𝗽 𝗙𝗶𝗻𝗮𝗹𝗲 𝗗𝗶𝘀𝗰𝗵𝗮𝗿𝗴𝗲𝘀 𝗮 𝗚𝗿𝗼𝗼𝘃𝗲 𝗼𝗳 𝗖𝗮𝗺𝗽𝘂𝘀 𝗣𝗿𝗶𝗱𝗲</h3>
-                    <p>With creativity and rhythm, the Kaliline Festival's Hiphop competition concluded with a bang, resonating with pride and unity across participating colleges and campuses of the University of Southern Mindanao (USM). </p>
-                    <span class="read-more">View Gallery &rarr;</span>
+        <section id="event-coverage" class="section reveal">
+            <h2>Event Coverage</h2>
+            <div class="card-grid">
+                <div class="card event-card">
+                    <img loading="lazy" src="img/kaliline.jpg" alt="Photo from the Annual Innovation Summit">
+                    <div class="event-card-content">
+                        <h3>Resounding Rhythms: Kaliline Festival's Hiphop Finale Discharges a Groove of Campus Pride</h3>
+                        <p>With creativity and rhythm, the Kaliline Festival's Hiphop competition concluded with a bang, resonating with pride and unity across participating colleges and campuses of the University of Southern Mindanao (USM). </p>
+                        <span class="read-more">View Gallery →</span>
+                    </div>
+                </div>
+                <div class="card event-card">
+                    <img loading="lazy" src="img/bagani.jpg" alt="Photo from the Student Leaders Conference">
+                    <div class="event-card-content">
+                        <h3>Unilympics 2024: Bagani Warriors Sweeps 1st Runner-up Win</h3>
+                        <p>The Bagani Warriors chronicled an amazing 1st runner-up win in this year's Unilympics held at USM Kabacan, Cotabato, on May 08-10, 2024.</p>
+                        <span class="read-more">Read Full Story →</span>
+                    </div>
+                </div>
+                <div class="card event-card">
+                    <img loading="lazy" src="img/masts.jpg" alt="Photo from the 24-Hour Hackathon">
+                    <div class="event-card-content">
+                        <h3>MASTS Games Opening ignites the Spirit of Athleticism, tightens bonds through Sports</h3>
+                        <p>Athletes and coaches from 30 competing State Universities and Colleges (SUCs) gathered at the Provincial Capitol grounds for the Opening Ceremony of the much anticipated MASTS Friendship Games 2023 today, September 09.</p>
+                        <span class="read-more">See The Winners →</span>
+                    </div>
                 </div>
             </div>
-            <div class="event-card">
-                <img src="img/bagani.jpg" alt="Photo from the Student Leaders Conference">
-                <div class="event-card-content">
-                    <h3>𝗨𝗻𝗶𝗹𝘆𝗺𝗽𝗶𝗰𝘀 𝟮𝟬𝟮𝟰: 𝗕𝗮𝗴𝗮𝗻𝗶 𝗪𝗮𝗿𝗿𝗶𝗼𝗿𝘀 𝗦𝘄𝗲𝗲𝗽𝘀 𝟭𝘀𝘁 𝗥𝘂𝗻𝗻𝗲𝗿-𝘂𝗽 𝗪𝗶𝗻</h3>
-                    <p>The Bagani Warriors chronicled an amazing 1st runner-up win in this year's Unilympics held at USM Kabacan, Cotabato, on May 08-10, 2024.</p>
-                    <span class="read-more">Read Full Story &rarr;</span>
+        </section>
+        
+        <section id="announcements" class="section reveal">
+            <h2>Announcements</h2>
+            <div class="content-with-image">
+                <img loading="lazy" src="img/announcment.jpg" alt="A relevant image for the announcements section" />
+                <div>
+                    <h3>Attention, graduating students of Class 2025!</h3>
+                    <p>In line with the upcoming 57th Commencement Exercises, all graduating students are required to attend the graduation rehearsal on June 18-20, 2025, at the USM-KCC Covered Court.... <a href="#" class="read-more">Read More</a></p>
                 </div>
             </div>
-            <div class="event-card">
-                <img src="img/masts.jpg" alt="Photo from the 24-Hour Hackathon">
-                <div class="event-card-content">
-                    <h3>𝗠𝗔𝗦𝗧𝗦 𝗚𝗮𝗺𝗲𝘀 𝗢𝗽𝗲𝗻𝗶𝗻𝗴 𝗶𝗴𝗻𝗶𝘁𝗲𝘀 𝘁𝗵𝗲 𝗦𝗽𝗶𝗿𝗶𝘁 𝗼𝗳 𝗔𝘁𝗵𝗹𝗲𝘁𝗶𝗰𝗶𝘀𝗺, 𝘁𝗶𝗴𝗵𝘁𝗲𝗻𝘀 𝗯𝗼𝗻𝗱𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝗦𝗽𝗼𝗿𝘁𝘀</h3>
-                    <p>Athletes and coaches from 30 competing State Universities and Colleges (SUCs) gathered at the Provincial Capitol grounds for the Opening Ceremony of the much anticipated MASTS Friendship Games 2023 today, September 09.</p>
-                    <span class="read-more">See The Winners &rarr;</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="announcements" class="section reveal">
-      <h2>Announcements</h2>
-      <div class="content-with-image">
-        <img src="img/announcment.jpg" alt="A relevant image for the announcements section" />
-        <div>
-            <h3>Attention, graduating students of Class 2025!</h3>
-            <p>In line with the upcoming 57th Commencement Exercises, all graduating students are required to attend the graduation rehearsal on 𝗝𝘂𝗻𝗲 𝟭𝟴-𝟮𝟬, 𝟮𝟬𝟮𝟱, 𝗮𝘁 𝘁𝗵𝗲 𝗨𝗦𝗠-𝗞𝗖𝗖 𝗖𝗼𝘃𝗲𝗿𝗲𝗱 𝗖𝗼𝘂𝗿𝘁.... <a href="#" class="read-more">Read More</a></p>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section id="editorial" class="section reveal">
-      <h2>Editorial Board</h2>
-      <div class="staff-grid">
-        <div class="staff-card" tabindex="0">
-          <img src="img/img2/QUIRINO, FRISK JASPER Q UNI_5712.jpg" alt="Josephine De Guzman in formal attire" />
-          <img src="img/img2/frisk2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-          <h3>Frisk Jasper Quirino</h3>
-          <p>Editor-in-Chief</p>
-        </div>
-        <div>
-            <div class="staff-card" tabindex="0">
-                <img src="img/JALLORINA, RANO MIKAEL M UNI_5454.jpg" alt="Josephine De Guzman in formal attire" />
-                <img src="img/rano 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-                <h3>Rano Mikael Jallorina</h3>
-                <p>Associate Editor</p>
-              </div>  
-        </div>
-        <div>
-            <div class="staff-card" tabindex="0">
-                <img src="img/BAISAC, PAUL JHISTNER C UNI_5594.jpg" alt="Josephine De Guzman in formal attire" />
-                <img src="img/baisac 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-                <h3>Jhistner Paul Baisac</h3>
-                <p>Managing Editor</p>
-            </div>  
-        </div>
-        <div class="staff-card" tabindex="0">
-            <img src="img/ADLAON, MERRY FER S UNI_5470.jpg" alt="Josephine De Guzman in formal attire" />
-            <img src="img/fer 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-            <h3>Merry Fer S. Adlaon</h3>
-            <p>Senior News Editor</p>
-          </div>
-          <div>
-              <div class="staff-card" tabindex="0">
-                  <img src="img/ORFRECIO, JENNY V UNI_5690.jpg" alt="Josephine De Guzman in formal attire" />
-                  <img src="img/jenny 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-                  <h3>Jenny V. Orfrecio</h3>
-                  <p>Literary Editor</p>
-                </div>  
-          </div>
-          <div>
-              <div class="staff-card" tabindex="0">
-                  <img src="img/POETA, JASPER ADRIAN  UNI_5488.jpg" alt="Josephine De Guzman in formal attire" />
-                  <img src="img/poeta 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-                  <h3>Jasper Adrian Poeta</h3>
-                  <p>News Editor</p>
-              </div>  
-          </div>
-          <div class="staff-card" tabindex="0">
-            <img src="img/jose formal.jpg" alt="Josephine De Guzman in formal attire" />
-            <img src="img/jose1 (1).JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-            <h3>Josephine M. De Guzman</h3>
-            <p>Feature Editor</p>
-          </div>
-          <div>
-              <div class="staff-card" tabindex="0">
-                  <img src="img/img2/LIGUE, KENNETH JONH G UNI_5544.jpg" alt="Josephine De Guzman in formal attire" />
-                  <img src="img/img2/keneth 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-                  <h3>Jonh Kenneth Ligue</h3>
-                  <p>Staff Writer</p>
-                </div>  
-          </div>
-          <div>
-              <div class="staff-card" tabindex="0">
-                  <img src="img/img2/CALBAZA, JHERRIC JADE A UNI_5390.jpg" alt="Josephine De Guzman in formal attire" />
-                  <img src="img/img2/JHERIC 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-                  <h3>Jherric Jade A. Calbaza</h3>
-                  <p>Staff Writer</p>
-              </div>  
-          </div>
-          <div class="staff-card" tabindex="0">
-            <img src="img/img2/ESTEPA, ANGEL LINE E UNI_5403.jpg" alt="Josephine De Guzman in formal attire" />
-            <img src="img/img2/ANGEL 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-            <h3>Angel line Estepa </h3>
-            <p>Staff Writer</p>
-          </div>
-          <div>
-              <div class="staff-card" tabindex="0">
-                  <img src="img/img2/VIOLON, REYMAR A UNI_5581.jpg" alt="Josephine De Guzman in formal attire" />
-                  <img src="img/img2/VIOLON 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-                  <h3>Reymar A. Violon</h3>
-                  <p>Creative Photo Editor</p>
-                </div>  
-          </div>
-          <div>
-              <div class="staff-card" tabindex="0">
-                  <img src="img/img2/CALBAZA, JASPER KATE A UNI_5643.jpg" alt="Josephine De Guzman in formal attire" />
-                  <img src="img/img2/KATE 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-                  <h3>Jasper Kate A. Calbaza</h3>
-                  <p>Creative Photo Editor</p>
-              </div>  
-          </div>
-          <div class="staff-card" tabindex="0">
-            <img src="img/img2/EBAROLA, LAURENCE P UNI_5504.jpg" alt="Josephine De Guzman in formal attire" />
-            <img src="img/img2/ebarola 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-            <h3>Laurence B. Ebarola</h3>
-            <p>Senior Cartoonist</p>
-          </div>
-          <div>
-              <div class="staff-card" tabindex="0">
-                  <img src="img/img2/ABRENICA, ALVIN M UNI_5565.jpg" alt="Josephine De Guzman in formal attire" />
-                  <img src="img/img2/alvin 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-                  <h3>Alvin M. Abrenica</h3>
-                  <p>Junior Cartoonist</p>
-                </div>  
-          </div>
-          <div>
-              <div class="staff-card" tabindex="0">
-                  <img src="img/img2/ABSALON, REYNOLD J UNI_5515.jpg" alt="Josephine De Guzman in formal attire" />
-                  <img src="img/img2/absalon 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-                  <h3>Reynold J. Absalon</h3>
-                  <p>Junior Cartoonist</p>
-              </div>  
-          </div>
-          <div class="staff-card" tabindex="0">
-            <img src="img/img2/LOPEZ, LUIJIE D UNI_5366.jpg" alt="Josephine De Guzman in formal attire" />
-            <img src="img/img2/lopez 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-            <h3>Luijie D. Lopez</h3>
-            <p>Chief Photojournalist</p>
-          </div>
-          <div>
-            <div class="staff-card" tabindex="0">
-              <img src="img/img2/DANO 1.jpg" alt="Josephine De Guzman in formal attire" />
-              <img src="img/img2/DANO 2.jpg" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-              <h3>Jester T. Dano</h3>
-              <p>Junior Photojournalist</p>
-            </div>  
-          </div>
-          <div>
-            <div class="staff-card" tabindex="0">
-              <img src="img/img2/ELLEOMBE, JAZMINE GWYN M UNI_5527.jpg" alt="Josephine De Guzman in formal attire" />
-              <img src="img/img2/ELLEOMBE 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-              <h3>Jazmine Gwyne M. Elleombe</h3>
-              <p>Junior Photojournalist</p>
+        <section id="editorial" class="section reveal">
+            <h2>Editorial Board</h2>
+
+            <div class="staff-group-header"><h3 class="staff-group-title">Executives</h3></div>
+            <div class="staff-grid">
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/QUIRINO, FRISK JASPER Q UNI_5712.jpg" alt="Formal portrait of Frisk Jasper Quirino" /><img loading="lazy" src="img/img2/frisk2.JPG" alt="Frisk Jasper Quirino in a casual pose" class="hover-img" /><h3>Frisk Jasper Quirino</h3><p>Editor-in-Chief</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/JALLORINA, RANO MIKAEL M UNI_5454.jpg" alt="Formal portrait of Rano Mikael Jallorina" /><img loading="lazy" src="img/rano 2.JPG" alt="Rano Mikael Jallorina in a casual pose" class="hover-img" /><h3>Rano Mikael Jallorina</h3><p>Associate Editor</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/BAISAC, PAUL JHISTNER C UNI_5594.jpg" alt="Formal portrait of Jhistner Paul Baisac" /><img loading="lazy" src="img/baisac 2.JPG" alt="Jhistner Paul Baisac in a casual pose" class="hover-img" /><h3>Jhistner Paul Baisac</h3><p>Managing Editor</p></div>
             </div>
-          </div>
-          <div class="staff-card" tabindex="0">
-            <img src="img/img2/CATUBURAN, CESAR JOHN T UNI_5492.jpg" alt="Josephine De Guzman in formal attire" />
-            <img src="img/img2/cesar 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-            <h3>Cesar John T. Catuburan</h3>
-            <p>Chief Graphic Designer</p>
-          <div>
-          </div>
-        </div>
-        <div class="staff-card" tabindex="0">
-          <img src="img/img2/earl pro.JPG" alt="Josephine De Guzman in formal attire" />
-          <img src="img/img2/earl 2 (1).JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-          <h3>Earl Jensen Keith C. Jamon</h3>
-          <p>Senior Graphic Designer</p>
-        <div>
-        </div>
-      </div>
-      <div class="staff-card" tabindex="0">
-        <img src="img/img2/GARCIA, EDDIE BOY P UNI_5704.jpg" alt="Josephine De Guzman in formal attire" />
-        <img src="img/img2/EDIBOY2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-        <h3>Eddie Boy P. Garcia</h3>
-        <p>Junior Graphic Designer</p>
-      <div>
-      </div>
-    </div>
-    <div class="staff-card" tabindex="0">
-      <img src="img/img2/CALOPEZ, NEO MANUEL S UNI_5415.jpg" alt="Josephine De Guzman in formal attire" />
-      <img src="img/img2/NEOGAY.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-      <h3>Neo Manuel S. Calopez</h3>
-      <p>Junior Graphic Designer</p>
-    <div>
-    </div>
-  </div>
-    <div class="staff-card" tabindex="0">
-      <img src="img/img2/DOMINGO, JOHN RILL M UNI_5340.jpg" alt="Josephine De Guzman in formal attire" />
-      <img src="img/img2/rill 2.JPG" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-      <h3>John Rill M. Domingo</h3>
-      <p>Senior Videographer/Video Editor</p>
-    <div>
-    </div>
-  </div>
-    <div class="staff-card" tabindex="0">
-      <img src="img/img2/MORVEN 1.jpg" alt="Josephine De Guzman in formal attire" />
-      <img src="img/img2/MORVEN 2.jpg" alt="Josephine De Guzman in a second pose" class="hover-img" aria-hidden="true" />
-      <h3>Morven O. Jubahib</h3>
-      <p>Junior Videographer/Video Editor</p>
-    <div>
-          
+
+            <div class="staff-group-header"><h3 class="staff-group-title">Section Editors</h3></div>
+            <div class="staff-grid">
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/ADLAON, MERRY FER S UNI_5470.jpg" alt="Formal portrait of Merry Fer S. Adlaon" /><img loading="lazy" src="img/fer 2.JPG" alt="Merry Fer S. Adlaon in a casual pose" class="hover-img" /><h3>Merry Fer S. Adlaon</h3><p>Senior News Editor</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/POETA, JASPER ADRIAN  UNI_5488.jpg" alt="Formal portrait of Jasper Adrian Poeta" /><img loading="lazy" src="img/poeta 2.JPG" alt="Jasper Adrian Poeta in a casual pose" class="hover-img" /><h3>Jasper Adrian Poeta</h3><p>News Editor</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/jose formal.jpg" alt="Formal portrait of Josephine M. De Guzman" /><img loading="lazy" src="img/jose1 (1).JPG" alt="Josephine M. De Guzman in a casual pose" class="hover-img" /><h3>Josephine M. De Guzman</h3><p>Feature Editor</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/ORFRECIO, JENNY V UNI_5690.jpg" alt="Formal portrait of Jenny V. Orfrecio" /><img loading="lazy" src="img/jenny 2.JPG" alt="Jenny V. Orfrecio in a casual pose" class="hover-img" /><h3>Jenny V. Orfrecio</h3><p>Literary Editor</p></div>
+            </div>
+
+            <div class="staff-group-header"><h3 class="staff-group-title">Staff Writers</h3></div>
+            <div class="staff-grid">
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/LIGUE, KENNETH JONH G UNI_5544.jpg" alt="Formal portrait of Jonh Kenneth Ligue" /><img loading="lazy" src="img/img2/keneth 2.JPG" alt="Jonh Kenneth Ligue in a casual pose" class="hover-img" /><h3>Jonh Kenneth Ligue</h3><p>Staff Writer</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/CALBAZA, JHERRIC JADE A UNI_5390.jpg" alt="Formal portrait of Jherric Jade A. Calbaza" /><img loading="lazy" src="img/img2/JHERIC 2.JPG" alt="Jherric Jade A. Calbaza in a casual pose" class="hover-img" /><h3>Jherric Jade A. Calbaza</h3><p>Staff Writer</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/ESTEPA, ANGEL LINE E UNI_5403.jpg" alt="Formal portrait of Angel line Estepa" /><img loading="lazy" src="img/img2/ANGEL 2.JPG" alt="Angel line Estepa in a casual pose" class="hover-img" /><h3>Angel line Estepa</h3><p>Staff Writer</p></div>
+            </div>
+
+            <div class="staff-group-header"><h3 class="staff-group-title">Photojournalists & Photo Editors</h3></div>
+            <div class="staff-grid">
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/LOPEZ, LUIJIE D UNI_5366.jpg" alt="Formal portrait of Luijie D. Lopez" /><img loading="lazy" src="img/img2/lopez 2.JPG" alt="Luijie D. Lopez in a casual pose" class="hover-img" /><h3>Luijie D. Lopez</h3><p>Chief Photojournalist</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/DANO 1.jpg" alt="Formal portrait of Jester T. Dano" /><img loading="lazy" src="img/img2/DANO 2.jpg" alt="Jester T. Dano in a casual pose" class="hover-img" /><h3>Jester T. Dano</h3><p>Junior Photojournalist</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/ELLEOMBE, JAZMINE GWYN M UNI_5527.jpg" alt="Formal portrait of Jazmine Gwyne M. Elleombe" /><img loading="lazy" src="img/img2/ELLEOMBE 2.JPG" alt="Jazmine Gwyne M. Elleombe in a casual pose" class="hover-img" /><h3>Jazmine Gwyne M. Elleombe</h3><p>Junior Photojournalist</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/VIOLON, REYMAR A UNI_5581.jpg" alt="Formal portrait of Reymar A. Violon" /><img loading="lazy" src="img/img2/VIOLON 2.JPG" alt="Reymar A. Violon in a casual pose" class="hover-img" /><h3>Reymar A. Violon</h3><p>Creative Photo Editor</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/CALBAZA, JASPER KATE A UNI_5643.jpg" alt="Formal portrait of Jasper Kate A. Calbaza" /><img loading="lazy" src="img/img2/KATE 2.JPG" alt="Jasper Kate A. Calbaza in a casual pose" class="hover-img" /><h3>Jasper Kate A. Calbaza</h3><p>Creative Photo Editor</p></div>
+            </div>
+
+            <div class="staff-group-header"><h3 class="staff-group-title">Videographers & Video Editors</h3></div>
+            <div class="staff-grid">
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/DOMINGO, JOHN RILL M UNI_5340.jpg" alt="Formal portrait of John Rill M. Domingo" /><img loading="lazy" src="img/img2/rill 2.JPG" alt="John Rill M. Domingo in a casual pose" class="hover-img" /><h3>John Rill M. Domingo</h3><p>Senior Videographer/Video Editor</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/MORVEN 1.jpg" alt="Formal portrait of Morven O. Jubahib" /><img loading="lazy" src="img/img2/MORVEN 2.jpg" alt="Morven O. Jubahib in a casual pose" class="hover-img" /><h3>Morven O. Jubahib</h3><p>Junior Videographer/Video Editor</p></div>
+            </div>
             
+            <div class="staff-group-header"><h3 class="staff-group-title">Cartoonists</h3></div>
+            <div class="staff-grid">
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/EBAROLA, LAURENCE P UNI_5504.jpg" alt="Formal portrait of Laurence B. Ebarola" /><img loading="lazy" src="img/img2/ebarola 2.JPG" alt="Laurence B. Ebarola in a casual pose" class="hover-img" /><h3>Laurence B. Ebarola</h3><p>Senior Cartoonist</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/ABRENICA, ALVIN M UNI_5565.jpg" alt="Formal portrait of Alvin M. Abrenica" /><img loading="lazy" src="img/img2/alvin 2.JPG" alt="Alvin M. Abrenica in a casual pose" class="hover-img" /><h3>Alvin M. Abrenica</h3><p>Junior Cartoonist</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/ABSALON, REYNOLD J UNI_5515.jpg" alt="Formal portrait of Reynold J. Absalon" /><img loading="lazy" src="img/img2/absalon 2.JPG" alt="Reynold J. Absalon in a casual pose" class="hover-img" /><h3>Reynold J. Absalon</h3><p>Junior Cartoonist</p></div>
+            </div>
             
-              
-            
-    
-    </section>
-
-    <section id="gear-staff" class="section reveal">
-        <h2>The Gear Staff A.Y. 2024-2025</h2>
-        <div class="staff-grid">
-          <div class="staff-card" tabindex="0">
-            <img src="img eb/JALLORINA, RANO MIKAEL M OTH_5266.jpg" alt="Jane Smith in her first pose" />
-            <img src="img eb/RANO 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-            <h3>Rano Mikael M. Jallorina</h3>
-            <p>Editor-in-Chief</p>
-          </div>
-          <div>
-            <div class="staff-card" tabindex="0">
-                <img src="img eb/DOMINGO, JOHN RILL M OTH_5295.jpg" alt="Jane Smith in her first pose" />
-                <img src="img eb/DOMINGO 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-                <h3>John Rill M. Domingo</h3>
-                <p>Associate Editor</p>
-          </div>
-        </div>
-        <div>
-          <div class="staff-card" tabindex="0">
-              <img src="img eb/ADLAON, MERRY FER S OTH_5255.jpg" alt="Jane Smith in her first pose" />
-              <img src="img eb/ADLAON 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-              <h3>Merry Fer S. Adlaon</h3>
-              <p>Managing Editor</p>
-        </div>
-        </div>
-        <div class="staff-card" tabindex="0">
-            <img src="img eb/POETA, JASPER ADRIAN  OTH_5274.jpg" alt="Jane Smith in her first pose" />
-            <img src="img eb/POETA 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-            <h3>Frisk Jasper Q. Quirino</h3>
-            <p>Circulation Editor</p>
-          </div>
-          <div>
-            <div class="staff-card" tabindex="0">
-                <img src="img eb/QUIRINO, FRISK JASPER Q OTH_5326.jpg" alt="Jane Smith in her first pose" />
-                <img src="img eb/QUIRINO 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-                <h3>Jasper Adrian Poeta</h3>
-                <p>Junior Staff</p>
-          </div>
-        </div>
-        <div>
-          <div class="staff-card" tabindex="0">
-              <img src="img eb/BAISAC, PAUL JHISTNER C UNI_5355.jpg" alt="Jane Smith in her first pose" />
-              <img src="img eb/BAISAC 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-              <h3>Paul Jhistner C. Baisac</h3>
-              <p>Senior Staff</p>
-        </div>
-        </div>
-    
-          <div>
-            <div class="staff-card" tabindex="0">
-                <img src="img eb/CATUBURAN, CESAR JOHN T OTH_5310.jpg" alt="Jane Smith in her first pose" />
-                <img src="img eb/CATUBURAN 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-                <h3>Cesar John T. Catuburan</h3>
-                <p>Senior Staff</p>
-          </div>
-        </div>
-        <div>
-          <div class="staff-card" tabindex="0">
-              <img src="img eb/CALBAZA, JASPER KATE A OTH_4465.jpg" alt="Jane Smith in her first pose" />
-              <img src="img eb/CALBAZA 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-              <h3>Jasper Kate A. Calbaza</h3>
-              <p>Junior Staff</p>
-        </div>
-        </div>
-        <div class="staff-card" tabindex="0">
-            <img src="img eb/ORFRECIO, JENNY V OTH_5427.jpg" alt="Jane Smith in her first pose" />
-            <img src="img eb/ORFRECIO 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-            <h3>Jenny V. Orfrecio</h3>
-            <p>Junior Staff</p>
-          </div>
-          <div>
-            <div class="staff-card" tabindex="0">
-                <img src="img eb/DE GUZMAN, JOSEPHINE M CTV_5280.jpg" alt="Jane Smith in her first pose" />
-                <img src="img eb/DE GUZMAN 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-                <h3>Josephine De Guzman</h3>
-                <p>Junior Staff</p>
-          </div>
-        </div>
-        <div>
-          <div class="staff-card" tabindex="0">
-              <img src="img eb/LIGUE, KENNETH JONH G CTV_5245.jpg" alt="Jane Smith in her first pose" />
-              <img src="img eb/LIGUE 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-              <h3>Kenneth John G. Ligue</h3>
-              <p>Junior Staff</p>
-        </div>
-        </div>
-        <div class="staff-card" tabindex="0">
-          <img src="img eb/SOSAS, ROWENA V OTH_5805.JPG" alt="Jane Smith in her first pose" />
-          <img src="img eb/SOSAS 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-          <h3>Dr. Rowena V. Sosas</h3>
-          <p>The Gear Adviser</p>
-    </div>
-    </div>
-          </div>
-         
-          
-      </section>
-
-    <section id="adviser" class="section reveal">
-        <h2>Our Adviser</h2>
-        <div class="adviser-wrapper">
-            <div class="staff-card" tabindex="0">
-              <img src="img/SOSAS, ROWENA V UNI_5679.jpg" alt="Photo of the publication adviser" />
-              <img src="img/sosas 2.JPG" alt="Jane Smith in her second pose" class="hover-img" aria-hidden="true" />
-              <h3>Dr. Rowena V. Sosas</Ri:a></h3>
-              <p>Student Publication Adviser</A></p>
+            <div class="staff-group-header"><h3 class="staff-group-title">Graphic Designers</h3></div>
+            <div class="staff-grid">
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/CATUBURAN, CESAR JOHN T UNI_5492.jpg" alt="Formal portrait of Cesar John T. Catuburan" /><img loading="lazy" src="img/img2/cesar 2.JPG" alt="Cesar John T. Catuburan in a casual pose" class="hover-img" /><h3>Cesar John T. Catuburan</h3><p>Chief Graphic Designer</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/earl pro.JPG" alt="Formal portrait of Earl Jensen Keith C. Jamon" /><img loading="lazy" src="img/img2/earl 2 (1).JPG" alt="Earl Jensen Keith C. Jamon in a casual pose" class="hover-img" /><h3>Earl Jensen Keith C. Jamon</h3><p>Senior Graphic Designer</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/GARCIA, EDDIE BOY P UNI_5704.jpg" alt="Formal portrait of Eddie Boy P. Garcia" /><img loading="lazy" src="img/img2/EDIBOY2.JPG" alt="Eddie Boy P. Garcia in a casual pose" class="hover-img" /><h3>Eddie Boy P. Garcia</h3><p>Junior Graphic Designer</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img/img2/CALOPEZ, NEO MANUEL S UNI_5415.jpg" alt="Formal portrait of Neo Manuel S. Calopez" /><img loading="lazy" src="img/img2/NEOGAY.JPG" alt="Neo Manuel S. Calopez in a casual pose" class="hover-img" /><h3>Neo Manuel S. Calopez</h3><p>Junior Graphic Designer</p></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="section reveal">
-        <div class="about-core-layout">
-            <div id="core">
-                <h2>Core Values</h2>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> Fairness</li>
-                    <li><i class="fas fa-check-circle"></i> Integrity </li>
-                    <li><i class="fas fa-check-circle"></i> Transparency </li>
-                    <li><i class="fas fa-check-circle"></i> Accountability
-                    </li>
-                </ul>
+        <section id="gear-staff" class="section reveal">
+            <h2>The Gear Staff A.Y. 2024-2025</h2>
+            <div class="staff-grid">
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/JALLORINA, RANO MIKAEL M OTH_5266.jpg" alt="Portrait of Rano Mikael M. Jallorina for The Gear Staff" /><img loading="lazy" src="img eb/RANO 2.JPG" alt="Rano Mikael M. Jallorina in a casual pose" class="hover-img" /><h3>Rano Mikael M. Jallorina</h3><p>Editor-in-Chief</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/DOMINGO, JOHN RILL M OTH_5295.jpg" alt="Portrait of John Rill M. Domingo for The Gear Staff" /><img loading="lazy" src="img eb/DOMINGO 2.JPG" alt="John Rill M. Domingo in a casual pose" class="hover-img" /><h3>John Rill M. Domingo</h3><p>Associate Editor</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/ADLAON, MERRY FER S OTH_5255.jpg" alt="Portrait of Merry Fer S. Adlaon for The Gear Staff" /><img loading="lazy" src="img eb/ADLAON 2.JPG" alt="Merry Fer S. Adlaon in a casual pose" class="hover-img" /><h3>Merry Fer S. Adlaon</h3><p>Managing Editor</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/QUIRINO, FRISK JASPER Q OTH_5326.jpg" alt="Portrait of Frisk Jasper Q. Quirino for The Gear Staff" /><img loading="lazy" src="img eb/QUIRINO 2.JPG" alt="Frisk Jasper Q. Quirino in a casual pose" class="hover-img" /><h3>Frisk Jasper Q. Quirino</h3><p>Circulation Editor</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/POETA, JASPER ADRIAN  OTH_5274.jpg" alt="Portrait of Jasper Adrian Poeta for The Gear Staff" /><img loading="lazy" src="img eb/POETA 2.JPG" alt="Jasper Adrian Poeta in a casual pose" class="hover-img" /><h3>Jasper Adrian Poeta</h3><p>Junior Staff</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/BAISAC, PAUL JHISTNER C UNI_5355.jpg" alt="Portrait of Paul Jhistner C. Baisac for The Gear Staff" /><img loading="lazy" src="img eb/BAISAC 2.JPG" alt="Paul Jhistner C. Baisac in a casual pose" class="hover-img" /><h3>Paul Jhistner C. Baisac</h3><p>Senior Staff</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/CATUBURAN, CESAR JOHN T OTH_5310.jpg" alt="Portrait of Cesar John T. Catuburan for The Gear Staff" /><img loading="lazy" src="img eb/CATUBURAN 2.JPG" alt="Cesar John T. Catuburan in a casual pose" class="hover-img" /><h3>Cesar John T. Catuburan</h3><p>Senior Staff</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/CALBAZA, JASPER KATE A OTH_4465.jpg" alt="Portrait of Jasper Kate A. Calbaza for The Gear Staff" /><img loading="lazy" src="img eb/CALBAZA 2.JPG" alt="Jasper Kate A. Calbaza in a casual pose" class="hover-img" /><h3>Jasper Kate A. Calbaza</h3><p>Junior Staff</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/ORFRECIO, JENNY V OTH_5427.jpg" alt="Portrait of Jenny V. Orfrecio for The Gear Staff" /><img loading="lazy" src="img eb/ORFRECIO 2.JPG" alt="Jenny V. Orfrecio in a casual pose" class="hover-img" /><h3>Jenny V. Orfrecio</h3><p>Junior Staff</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/DE GUZMAN, JOSEPHINE M CTV_5280.jpg" alt="Portrait of Josephine De Guzman for The Gear Staff" /><img loading="lazy" src="img eb/DE GUZMAN 2.JPG" alt="Josephine De Guzman in a casual pose" class="hover-img" /><h3>Josephine De Guzman</h3><p>Junior Staff</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/LIGUE, KENNETH JONH G CTV_5245.jpg" alt="Portrait of Kenneth John G. Ligue for The Gear Staff" /><img loading="lazy" src="img eb/LIGUE 2.JPG" alt="Kenneth John G. Ligue in a casual pose" class="hover-img" /><h3>Kenneth John G. Ligue</h3><p>Junior Staff</p></div>
+                <div class="staff-card" tabindex="0"><img loading="lazy" src="img eb/SOSAS, ROWENA V OTH_5805.JPG" alt="Portrait of Dr. Rowena V. Sosas for The Gear Staff" /><img loading="lazy" src="img eb/SOSAS 2.JPG" alt="Dr. Rowena V. Sosas in a casual pose" class="hover-img" /><h3>Dr. Rowena V. Sosas</h3><p>The Gear Adviser</p></div>
             </div>
-            <div>
-                <h2>About The Techno-Builders</h2>
-                <p>
-                    The Techno-Builders (TTB), the official student publication of the University pf Southern Mindanao-Kidapawan City Campus, is an autonomous, non-organizational, or non-academic guild composed of student writers and artists. Training, developing, and exposing journalists in various fields such as Editorial, News, Feature and Literary Writing, Cartooning and Visual Arts, Photography, Videography, Graphic Designing, and Layouting. TTB, being directly under the administration, is also assessed for International Organization for Standardization (ISO) certifications and recertifications.
-                </p>
+        </section>
+
+        <section id="adviser" class="section reveal">
+            <h2>Our Adviser</h2>
+            <div class="adviser-wrapper">
+                <div class="staff-card" tabindex="0">
+                    <img loading="lazy" src="img/SOSAS, ROWENA V UNI_5679.jpg" alt="Formal portrait of publication adviser Dr. Rowena V. Sosas" />
+                    <img loading="lazy" src="img/sosas 2.JPG" alt="Dr. Rowena V. Sosas in a casual pose" class="hover-img" />
+                    <h3>Dr. Rowena V. Sosas</h3>
+                    <p>Student Publication Adviser</p>
+                </div>
             </div>
+        </section>
+
+        <section id="about" class="section reveal">
+            <div class="about-core-layout">
+                <div id="core">
+                    <h2>Core Values</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Fairness</li>
+                        <li><i class="fas fa-check-circle"></i> Integrity </li>
+                        <li><i class="fas fa-check-circle"></i> Transparency </li>
+                        <li><i class="fas fa-check-circle"></i> Accountability</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>About The Techno-Builders</h2>
+                    <p>
+                        The Techno-Builders (TTB), the official student publication of the University pf Southern Mindanao-Kidapawan City Campus, is an autonomous, non-organizational, or non-academic guild composed of student writers and artists. Training, developing, and exposing journalists in various fields such as Editorial, News, Feature and Literary Writing, Cartooning and Visual Arts, Photography, Videography, Graphic Designing, and Layouting. TTB, being directly under the administration, is also assessed for International Organization for Standardization (ISO) certifications and recertifications.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="constitution" class="section reveal">
+            <h2>Constitution and Bylaws</h2>
+            <div class="constitution-content">
+                <p>Our organization is guided by a constitution that ensures fairness, transparency, and a commitment to our mission. It outlines our structure, membership, and operational procedures.</p>
+                <a href="/path/to/your/constitution.pdf" class="btn" target="_blank">Download Full Document</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons" aria-label="Social media links">
+            <a href="https://www.facebook.com/TTBofficialpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/@ttbofficialpage" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/ttbofficialpage/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
         </div>
-    </section>
-    
-    <section id="constitution" class="section reveal">
-        <h2>Constitution and Bylaws</h2>
-        <div class="constitution-content">
-            <p>Our organization is guided by a constitution that ensures fairness, transparency, and a commitment to our mission. It outlines our structure, membership, and operational procedures.</p>
-            <a href="/path/to/your/constitution.pdf" class="btn" target="_blank">Download Full Document</a>
-        </div>
-    </section>
-  </main>
+        <p>© 2025 The Techno Builders. All Rights Reserved.</p>
+    </footer>
 
-  <footer>
-    <div class="social-icons" aria-label="Social media links">
-      <a href="https://www.facebook.com/TTBofficialpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-      <a href="https://www.youtube.com/@ttbofficialpage" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/ttbofficialpage/?igsh=dTgxcmhqOXNrand3&fbclid=IwY2xjawLBqZZleHRuA2FlbQIxMABicmlkETFGSjJiZFJ1ZXoxbGZuV1FaAR4m-SkyYWIXFjlGAKHGBllQdzzwyJbZRHmi1_vrKxGTiWHB7f8U9E8CSD_RGw_aem_tpq44Jq1jHAu5kFShOojXA#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-    </div>
-    <p>&copy; 2025 The Techno Builders. All Rights Reserved.</p>
-  </footer>
+    <button class="scroll-top" aria-label="Scroll to top" title="Scroll to top">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
 
-  <button class="scroll-top" aria-label="Scroll to top" title="Scroll to top">
-    <i class="fa fa-chevron-up" aria-hidden="true"></i>
-  </button>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
