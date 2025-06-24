@@ -293,12 +293,35 @@ body {
 
 /* 12. Footer */
 footer {
-    background-color: var(--clr-primary); color: var(--clr-accent);
-    text-align: center; padding: 2rem; margin-top: 4rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
 }
-.social-icons { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; }
-.social-icons a { color: var(--clr-nav-text); font-size: 1.6rem; transition: color 0.3s ease, transform 0.3s ease; }
-.social-icons a:hover { color: var(--clr-accent); transform: scale(1.2); }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.social-icons a {
+    color: var(--clr-nav-text);
+    font-size: 1.6rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons a:hover {
+    color: var(--clr-accent);
+    transform: scale(1.2);
+}
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 2rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
 
 
 /* 13. Fixed-Position Elements */
@@ -355,6 +378,11 @@ footer {
         background-color: rgba(0,0,0,0.15);
         opacity: 1; visibility: visible;
         display: none; padding-left: 1rem;
+    }
+    .dropdown-content a {
+        color: var(--clr-accent);
+        font-weight: 500;
+        padding: 0.8rem 2rem 0.8rem 3rem;
     }
     .dropdown button.active + .dropdown-content { display: block; }
 }

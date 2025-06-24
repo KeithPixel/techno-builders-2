@@ -21,12 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (window.innerWidth <= 950) {
                     e.preventDefault();
                     btn.classList.toggle('active');
-                    const content = btn.nextElementSibling;
-                    if (content.style.display === 'block') {
-                        content.style.display = 'none';
-                    } else {
-                        content.style.display = 'block';
-                    }
                 }
             });
         });
@@ -36,9 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
      * SETUP: SWIPER SLIDERS
      */
     const setupSliders = () => {
+        if (typeof Swiper === 'undefined') {
+            console.error('Swiper library is not loaded. Sliders will not work.');
+            return;
+        }
+
         const heroSliderEl = document.querySelector('.hero-slider');
         if (heroSliderEl) {
-            const heroSlider = new Swiper(heroSliderEl, {
+            new Swiper(heroSliderEl, {
                 loop: true,
                 effect: 'fade',
                 autoplay: {
@@ -58,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const videoSliderEl = document.querySelector('.video-slider');
         if (videoSliderEl) {
-            const videoSlider = new Swiper(videoSliderEl, {
+            new Swiper(videoSliderEl, {
                 loop: true,
                 slidesPerView: 1,
                 spaceBetween: 30,
@@ -127,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         observer.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.01 }); // Sensitive threshold for mobile
+            }, { threshold: 0.01 });
 
             reveals.forEach(el => {
                 revealObserver.observe(el);
@@ -156,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const setupTypewriter = () => {
         const target = document.querySelector('.typewriter-text');
         if (!target) return;
-        const phrases = ["The Techno-Builders", "Responsible Journalism", "Making Difference Beyond Words."];
+        const phrases = ["The Techno-Builders", "Responsible Journalism", "Making a Difference Beyond Words."];
         let phraseIndex = 0, charIndex = 0;
         const type = () => {
             if (charIndex < phrases[phraseIndex].length) {
@@ -179,11 +178,30 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     /**
+     * SETUP: LAST UPDATED DATE & TIME
+     */
+    const setupLastUpdated = () => {
+        const lastUpdatedElement = document.getElementById('last-updated-placeholder');
+        if (lastUpdatedElement) {
+            const lastModified = new Date(document.lastModified);
+            
+            const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+            const timeOptions = { hour: 'numeric', minute: '2-digit', hour12: true };
+
+            const formattedDate = lastModified.toLocaleDateString('en-US', dateOptions);
+            const formattedTime = lastModified.toLocaleTimeString('en-US', timeOptions);
+
+            lastUpdatedElement.textContent = `${formattedDate} at ${formattedTime}`;
+        }
+    };
+
+    /**
      * INITIALIZE ALL MODULES
      */
-    setupMobileMenu();
-    setupSliders();
-    setupThemeToggle();
-    setupScrollEffects();
-    setupTypewriter();
+    try { setupMobileMenu(); } catch (e) { console.error("Error in setupMobileMenu:", e); }
+    try { setupSliders(); } catch (e) { console.error("Error in setupSliders:", e); }
+    try { setupThemeToggle(); } catch (e) { console.error("Error in setupThemeToggle:", e); }
+    try { setupScrollEffects(); } catch (e) { console.error("Error in setupScrollEffects:", e); }
+    try { setupTypewriter(); } catch (e) { console.error("Error in setupTypewriter:", e); }
+    try { setupLastUpdated(); } catch (e) { console.error("Error in setupLastUpdated:", e); }
 });
