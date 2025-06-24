@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const setupTypewriter = () => {
         const target = document.querySelector('.typewriter-text');
         if (!target) return;
-        const phrases = ["The Techno-Builders", "Responsible Journalism", "Making a Difference Beyond Words."];
+        const phrases = ["The Techno-Builders", "Responsible Journalism", "Making Difference Beyond Words."];
         let phraseIndex = 0, charIndex = 0;
         const type = () => {
             if (charIndex < phrases[phraseIndex].length) {
