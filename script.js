@@ -18,7 +18,8 @@ const App = {
     staffData: {
         editorial: [
             { group: 'Executives', name: 'Josephine De Guzman', title: 'Editor-in-Chief', img1: 'editorial/DEGUZMAN1.jpg', img2: 'editorial/DEGUZMAN2.jpg' },
-            { name: 'Jherric Jade A. Calbaza', title: 'Associate Editor', img1: 'editorial/CALBAZA1.JPG', img2: 'editorial/CALBAZA2.JPG' },
+            { name: 'Jherric Jade A. Calbaza', title: 'Associate Editor', img1: 'the gear/CALBAZA1.JPG', img2: 'editorial/CALBAZA2.JPG' },
+
             { name: 'Jonh Kenneth Ligue', title: 'Managing Editor', img1: 'editorial/LIGUE1.jpg', img2: 'editorial/LIGUE2.JPG' },
             { group: 'Section Editors', name: 'Angel Line E. Estepa', title: 'Literary Editor', img1: 'editorial/ESTEPA1.jpg', img2: 'editorial/ANGEL2.JPG' },
             
@@ -33,7 +34,7 @@ const App = {
             { name: 'Xriz Julian Cervancia ', title: 'Junior Videographer/Video Editor', img1: 'editorial/CRIZ1.jpg', img2: 'editorial/CRIZ1.jpg' },
             { group: 'Cartoonists', name: 'Laurence B. Ebarola', title: 'Senior Cartoonist', img1: 'editorial/EBAROLA1.jpg', img2: 'editorial/EBAROLA2.JPG' },
             { name: 'Reynold J. Absalon', title: 'Junior Cartoonist', img1: 'editorial/ABSALON1.jpg', img2: 'editorial/ABSALON2.JPG' },
-            { group: 'Graphic Designers', name: 'Earl Jensen Keith C. Jamon', title: 'Chief Graphic Designer', img1: 'editorial/EARL1.jpg', img2: 'editorial/EARL2.JPG' },
+            { group: 'Graphic Designers', name: 'Earl Jensen Keith C. Jamon', title: 'Chief Graphic Designer', img1: 'the gear/EARL1.jpg', img2: 'editorial/EARL2.JPG' },
             { name: 'Eddie Boy P. Garcia', title: 'Junior Graphic Designer', img1: 'editorial/EDIBOY1.jpg', img2: 'editorial/EDIBOY2.JPG' },
             { name: 'Neo Manuel S. Calopez', title: 'Junior Graphic Designer', img1: 'editorial/CALOPEZ1.jpg', img2: 'editorial/NEO2.JPG' }
         ],
