@@ -42,7 +42,7 @@ const App = {
         gear: [
             { name: 'Kenneth Jonh G. Ligue', title: 'Editor-in-Chief', img1: 'the gear/LIGUE1.jpg', img2: 'the gear/LIGUE2.JPG' },
             { name: 'Josephine De Guzman', title: 'Associate Editor', img1: 'the gear/DEGUZMAN1.jpg', img2: 'the gear/DEGUZMAN2.JPG' },
-            { name: 'Jherric Jade A. Calbaza', title: 'Managing Editor', img1: 'the gear/CALBAZA1.jpg', img2: 'the gear/CALBAZA2.jpg' },
+            { name: 'Jherric Jade A. Calbaza', title: 'Managing Editor', img1: 'the gear/CALBAZA1.JPG', img2: 'the gear/CALBAZA2.JPG' },
             { name: 'Earl Jensen Keith C. Jamon', title: 'Circulation Editor', img1: 'the gear/EARL1.JPG', img2: 'the gear/EARL2.JPG' },
             { name: 'Jenny V. Orfrecio', title: 'Junior Staff', img1: 'the gear/JENNY1.jpg', img2: 'the gear/JENNY2.JPG' },
             { name: 'Laurence P. Ebarola', title: 'Junior Staff', img1: 'the gear/EBAROLA1.jpg', img2: 'the gear/EBAROLA2.JPG' },
