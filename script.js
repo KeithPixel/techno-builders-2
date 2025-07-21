@@ -35,7 +35,7 @@ const App = {
             { group: 'Cartoonists', name: 'Laurence B. Ebarola', title: 'Senior Cartoonist', img1: 'editorial/EBAROLA1.jpg', img2: 'editorial/EBAROLA2.JPG' },
             { name: 'Reynold J. Absalon', title: 'Junior Cartoonist', img1: 'editorial/ABSALON1.jpg', img2: 'editorial/ABSALON2.JPG' },
 
-            { group: 'Graphic Designers', name: 'Earl Jensen Keith Jamon', title: 'Chief Graphic Designer', img1: 'editorial/LALO1.jpg', img2: 'editorial/EARL2.JPG' },
+            { group: 'Graphic Designers', name: 'Earl Jensen Keith Jamon', title: 'Chief Graphic Designer', img1: 'the gear/EARL1.JPG', img2: 'the gear/EARL2.JPG' },
             { name: 'Eddie Boy P. Garcia', title: 'Senior Graphic Designer', img1: 'editorial/EDIBOY1.jpg', img2: 'editorial/EDIBOY2.JPG' },
             { name: 'Neo Manuel S. Calopez', title: 'Senior Graphic Designer', img1: 'editorial/CALOPEZ1.jpg', img2: 'editorial/NEO2.JPG' }
         ],
