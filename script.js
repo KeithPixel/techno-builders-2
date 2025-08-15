@@ -24,27 +24,30 @@ const App = {
             { group: 'Section Editors', name: 'Angel Line E. Estepa', title: 'Literary Editor', img1: 'editorial/ESTEPA1.jpg', img2: 'editorial/ANGEL2.JPG' },
             
             { name: 'Jenny V. Orfrecio', title: 'Feature Editor', img1: 'editorial/JENNY1.jpg', img2: 'editorial/JENNY2.JPG' },
-            { group: 'Staff Writers', name: 'Jeo Denise L. Labiano', title: 'Staff Writer', img1: 'editorial/JEO1.jpg', img2: 'editorial/JEO1.jpg' },
+            { group: 'Staff Writers', name: 'Jeo Denise L. Labiano', title: 'Staff Writer', img1: 'editorial/JEONEW.jpg', img2: 'editorial/JEONEW.jpg' },
             
             { group: 'Photojournalists & Photo Editors', name: 'Luijie D. Lopez', title: 'Chief Photojournalist', img1: 'editorial/LOPEZ1.jpg', img2: 'editorial/LOPEZ2.JPG' },
             { name: 'Jester T. Dano', title: 'Senior Photojournalist', img1: 'editorial/DANO (1).jpg', img2: 'editorial/DANO (1).jpg' },
             { name: 'Jazmine Gwyne M. Elleombe', title: 'Senior Photojournalist', img1: 'editorial/ELLEOMBE1.jpg', img2: 'editorial/ELLEOMBE2.JPG' },
            
             { group: 'Videographers & Video Editors', name: 'Morven O. Jubahib', title: 'Senior Videographer/Video Editor', img1: 'editorial/MORVEN.jpg', img2: 'editorial/MORVEN.jpg' },
-            { name: 'Xriz Julian Cervancia ', title: 'Junior Videographer/Video Editor', img1: 'editorial/CRIZ1.jpg', img2: 'editorial/CRIZ1.jpg' },
+            { name: 'Xriz Julian Cervancia ', title: 'Junior Videographer/Video Editor', img1: 'editorial/XRIZNEW.jpg', img2: 'editorial/XRIZNEW.jpg' },
             { group: 'Cartoonists', name: 'Laurence B. Ebarola', title: 'Senior Cartoonist', img1: 'editorial/EBAROLA1.jpg', img2: 'editorial/EBAROLA2.JPG' },
             { name: 'Reynold J. Absalon', title: 'Junior Cartoonist', img1: 'editorial/ABSALON1.jpg', img2: 'editorial/ABSALON2.JPG' },
 
             { group: 'Graphic Designers', name: 'Earl Jensen Keith Jamon', title: 'Chief Graphic Designer', img1: 'the gear/EARL1.JPG', img2: 'the gear/EARL2.JPG' },
             { name: 'Eddie Boy P. Garcia', title: 'Senior Graphic Designer', img1: 'editorial/EDIBOY1.jpg', img2: 'editorial/EDIBOY2.JPG' },
-            { name: 'Neo Manuel S. Calopez', title: 'Senior Graphic Designer', img1: 'editorial/CALOPEZ1.jpg', img2: 'editorial/NEO2.JPG' }
+            { name: 'Neo Manuel S. Calopez', title: 'Senior Graphic Designer', img1: 'editorial/CALOPEZ1.jpg', img2: 'editorial/NEO2.JPG' },
+            { name: 'Steve Nico F. Baluyot', title: 'Junior Graphic Designer', img1: 'editorial/STEVE1.jpg', img2: 'editorial/STEVE1.JPG' },
+
+            
         ],
         gear: [
             { name: 'Kenneth Jonh G. Ligue', title: 'Editor-in-Chief', img1: 'the gear/LIGUE1.jpg', img2: 'the gear/LIGUE2.JPG' },
             { name: 'Josephine De Guzman', title: 'Associate Editor', img1: 'the gear/DEGUZMAN1.jpg', img2: 'the gear/DEGUZMAN2.JPG' },
             { name: 'Jherric Jade A. Calbaza', title: 'Managing Editor', img1: 'the gear/JERIC1.jpg', img2: 'the gear/CALBAZA2.JPG' },
 
-            { name: 'Earl Jensen Keith C. Jamon', title: 'Circulation Editor', img1: 'the gear/EARL1.JPG', img2: 'the gear/EARL2.JPG' },
+            { name: 'Earl Jensen C. Jamonz', title: 'Circulation Editor', img1: 'the gear/EARL1.JPG', img2: 'the gear/EARL2.JPG' },
             { name: 'Jenny V. Orfrecio', title: 'Junior Staff', img1: 'the gear/JENNY1.jpg', img2: 'the gear/JENNY2.JPG' },
             { name: 'Laurence P. Ebarola', title: 'Junior Staff', img1: 'the gear/EBAROLA1.jpg', img2: 'the gear/EBAROLA2.JPG' },
             { name: 'Jazmine Gwyn M. Elleombe', title: 'Junior Staff', img1: 'the gear/ELLEOMBE1.jpg', img2: 'the gear/ELLEOMBE2.JPG' },
